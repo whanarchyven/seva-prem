@@ -1,132 +1,51 @@
+@import './fonts.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-iframe {
-  width: 100%;
-  height: 100%;
-}
-
-html {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  font-size: 10px;
-}
-
-html,
-body {
-  height: 100%;
-}
-
-select {
-  appearance: none;
-}
-
-body {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  -webkit-text-size-adjust: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  @apply text-black;
-  @apply bg-white;
-  min-width: 360px;
-  font-size: 1.8rem;
-  font-weight: 400;
-  line-height: 1.2;
-  -webkit-overflow-scrolling: touch;
-  position: relative;
-  @apply font-base;
-}
-
-* {
-  box-sizing: border-box;
-
-  &:after {
-    box-sizing: border-box;
+@layer base {
+  .callback-button-bg {
+    background: radial-gradient(circle, #dab37f 35%, #ce9954 100%);
   }
 
-  &:before {
-    box-sizing: border-box;
+  .callback-button-shadows {
+    box-shadow:
+      0px 0px 37.1px 2px #bd945c,
+      0px 4px 0px 1px #bd945c;
   }
-}
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-p {
-  margin: 0;
-  padding: 0;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-ol {
-  margin: 0;
-  padding: 0;
-}
-
-address {
-  margin: 0;
-  padding: 0;
-  font-style: normal;
-}
-
-figure {
-  margin: 0;
-  padding: 0;
-}
-
-table {
-  margin: 0;
-  padding: 0;
-}
-
-b {
-  font-weight: 700;
-}
-
-strong {
-  font-weight: 700;
-}
-
-@supports (font: -apple-system-body) and (-webkit-appearance: none) {
-  img[loading='lazy'] {
-    clip-path: inset(0.06rem);
+  .for-who-block {
+    background: radial-gradient(circle, #fff4e5 0%, #f3dfc5 100%);
   }
-}
 
-@keyframes spinSlow {
-  0% {
-    transform: rotate(0deg);
+  @media screen and (max-width: 600px) {
+    .for-who-block {
+      background: url('../../public/images/help_mobile_footage.png');
+      background-position: right;
+      background-size: cover;
+    }
   }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
-@keyframes loadingSpin {
-  0%,
-  100% {
-    transform: translate(0);
+  .for-who-footage {
+    background: radial-gradient(circle, #fff4e5 0%, #f3dfc5 100%);
   }
-  25% {
-    transform: translate(160%);
+
+  .for-who-text-grad {
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      #fff3e4 20%,
+      #fff3e4 100%
+    );
   }
-  50% {
-    transform: translate(160%, 160%);
-  }
-  75% {
-    transform: translate(0, 160%);
+
+  .author-wrapper {
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      #fff 20%,
+      #fff 100%
+    );
   }
 }

@@ -3,7 +3,6 @@ import React from 'react';
 import type { Metadata } from 'next';
 import ReduxProvider from '@/shared/store/ReduxProvider';
 import SmoothScroll from '@/shared/ui/SmoothScroll/SmoothScroll';
-import { RemResizeScript } from '@/features/rem-resize';
 
 // import 'swiper/css';
 // import 'swiper/css/navigation';
@@ -37,14 +36,7 @@ interface RootLayoutProps {
 export default function RootLayout({ children, ...rest }: RootLayoutProps) {
   return (
     <html lang="ru">
-      <head>
-        <RemResizeScript
-          defaultFontSize={10}
-          startScaleWidth={1440}
-          endScaleTopWidth={1920}
-          endScaleBottomWidth={1024}
-        />
-      </head>
+      <head></head>
       <body>
         <ReduxProvider {...rest}>
           <SmoothScroll>
