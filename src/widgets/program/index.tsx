@@ -11,7 +11,7 @@ const Stage: FC<{ children: ReactNode; bgId: 0 | 1 | 2 | 3 | number }> = ({
         className={'w-14 xl:w-20 aspect-square rounded-xl'}
         alt="programm"
       />
-      <p className={'xl:text-2xl  font-montserrat'}>{children}</p>
+      <p className={'xl:text-xl 2xl:text-2xl  font-montserrat'}>{children}</p>
     </div>
   );
 };
@@ -29,11 +29,11 @@ const Program: FC = () => {
       className={'flex flex-col w-full xl:p-20 p-3 gap-10 mt-10 items-center'}>
       <p
         className={
-          'font-phil text-[#C68A39] w-[90%] xl:w-1/3 text-center uppercase text-4xl xl:text-6xl'
+          'font-phil text-[#C68A39] w-full text-center uppercase text-4xl xl:text-6xl'
         }>
-        Программа <span className={'text-black'}>мастер-класса:</span>
+        Программа<br/> <span className={'text-black'}>мастер-класса:</span>
       </p>
-      <div className={'w-4/5 grid xl:grid-cols-2 xl:mt-14 gap-x-32 gap-y-12'}>
+      <div className={'2xl:w-4/5 grid xl:grid-cols-2 xl:mt-14 gap-x-32 gap-y-12'}>
         {stages.map((item, counter) => (
           <Stage key={counter} bgId={counter}>
             {item}
@@ -42,9 +42,9 @@ const Program: FC = () => {
       </div>
       <p
         className={
-          'text-[#674C27] xl:w-1/3 text-center xl:text-2xl text-xl font-montserrat italic'
+          'text-[#674C27] w-full text-center mt-9 xl:text-2xl text-xl font-montserrat italic'
         }>
-        Все упражнения и техники прикосновений вы сможете практиковать дома
+        Все упражнения и техники прикосновений <br/> вы сможете практиковать дома
       </p>
     </div>
   );

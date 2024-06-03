@@ -15,7 +15,7 @@ const Advantage: FC<AdvantageProps> = ({ children, bgId }) => {
       <p className={'text-6xl font-phil text-[#7B7061]'}>0{bgId + 1}</p>
       <p
         className={
-          'text-[#25211B] w-3/4 xl:text-2xl font-montserrat font-medium'
+          'text-[#25211B] w-3/4 xl:text-xl font-montserrat font-medium'
         }>
         {children}
       </p>
@@ -45,7 +45,7 @@ const HelpPoint: FC<{ children: ReactNode }> = ({ children }) => {
   return (
     <div className={'flex gap-4 items-start'}>
       <img src={'/icons/checkbox.png'} className={'w-7'} />
-      <p className={'font-montserrat m-0 xl:text-2xl'}>{children}</p>
+      <p className={'font-montserrat m-0 2xl:text-2xl xl:text-lg'}>{children}</p>
     </div>
   );
 };
@@ -67,7 +67,7 @@ const HelpBlock: FC = () => {
       <div className={'flex flex-col w-full p-7 xl:p-16 gap-8'}>
         <p
           className={
-            'font-phil text-black text-3xl xl:text-left text-center xl:text-6xl uppercase'
+            'font-phil text-black text-3xl xl:text-left text-center xl:text-5xl uppercase'
           }>
           Этот мастер-класс <br />
           <span className={'text-[#7F5C2D]'}>поможет вам:</span>
@@ -79,7 +79,7 @@ const HelpBlock: FC = () => {
         </div>
       </div>
       <img
-        className={'h-full hidden xl:flex w-auto'}
+        className={'h-full absolute right-0 hidden xl:flex w-auto'}
         src={'/images/help.png'}
       />
       <img
@@ -102,7 +102,7 @@ const Advantages: FC = () => {
         </p>
         <AdvantagesBlock />
       </div>
-      <div className={'flex p-4 xl:p-20 xl:px-32 justify-center'}>
+      <div className={'flex p-4 w-full xl:p-20 xl:px-32 justify-center'}>
         <HelpBlock />
       </div>
       <img

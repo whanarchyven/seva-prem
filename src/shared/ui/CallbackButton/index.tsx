@@ -16,13 +16,13 @@ const CallbackButton: FC<CallbackButtonProps> = ({
 }) => {
   const cvaRoot = cva([
     'callback-button-bg cursor-pointer pt-10 pb-6 px-10 text-center rounded-xl flex items-center justify-center callback-button-shadows',
-    'font-montserrat uppercase text-cBrownBlack font-semibold',
+    'font-montserrat uppercase  text-[#3E2B13] font-semibold',
   ]);
   return (
     <div
       onClick={() => (onClick ? onClick() : null)}
       className={clsx(className, cvaRoot())}>
-      {children}
+      <p className={'callback-button-text'}>{children}</p>
     </div>
   );
 };

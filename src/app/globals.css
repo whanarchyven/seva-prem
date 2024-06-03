@@ -48,4 +48,10 @@
       #fff 100%
     );
   }
+
+  .callback-button-text{
+    background: linear-gradient(to bottom, #6A5B49 0%, #4C3A24 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }

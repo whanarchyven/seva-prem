@@ -10,7 +10,7 @@ const ForWho: FC = () => {
         }>
         <div
           className={
-            'w-full xl:w-[36rem] rounded-2xl flex relative flex-col items-center aspect-square for-who-footage'
+            'w-full xl:w-1/3 2xl:w-[36rem] rounded-2xl flex relative flex-col items-center aspect-square for-who-footage'
           }>
           <img
             src={'/images/forwho_footage1.png'}
@@ -25,13 +25,13 @@ const ForWho: FC = () => {
               для пар
             </p>
             <p className={'text-center text-[#393939] text-xl font-montserrat'}>
-              стремящимся разнообразить свои отношения
+              стремящимся разнообразить <br/> свои отношения
             </p>
           </div>
         </div>
         <div
           className={
-            'w-full xl:w-[36rem] rounded-2xl flex relative flex-col aspect-square for-who-footage'
+            'w-full xl:w-1/3 2xl:w-[36rem] rounded-2xl flex relative flex-col aspect-square for-who-footage'
           }>
           <img
             src={'/images/forwho_footage2.png'}
@@ -46,7 +46,7 @@ const ForWho: FC = () => {
               для одиночек
             </p>
             <p className={'text-center text-[#393939] text-xl font-montserrat'}>
-              желающих лучше понять свое тело
+              желающих лучше <br/>понять свое тело
             </p>
           </div>
         </div>
