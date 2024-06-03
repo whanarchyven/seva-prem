@@ -10,7 +10,10 @@
     "build": "next build && npm run lint && npm run format:fix",
     "start": "next start",
     "lint": "next lint",
-    "test": "lint-staged"
+    "test": "lint-staged",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write --list-different .",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
